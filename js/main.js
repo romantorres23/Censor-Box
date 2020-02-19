@@ -72,7 +72,7 @@
 // });
 
 /**************Will replace cuss words with a noun using objects using JSON*******************/
-let cusswords = "js/cusswords.js";
+let cusswords = "js/cusswords.json";
 console.log(cusswords);
 
 fetch(cusswords)
