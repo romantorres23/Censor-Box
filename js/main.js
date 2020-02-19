@@ -72,3 +72,22 @@
 // });
 
 /**************Will replace cuss words with a noun using objects using JSON*******************/
+let cusswords = "js/cusswords.js";
+console.log(cusswords);
+
+fetch(cusswords)
+    .then(response => response.json())
+    .then(cusswords => {
+        console.dir(cusswords)
+        $(".go").on("click", function () {
+            let cuss = $('.str').val().split(' ');
+
+            for (let i = 0; i < cuss.length; i = i + 1) {
+                if (typeof cusswords[cuss[i]] !== "undefined") {
+                    cuss[i] = cusswords[cuss[i]];
+                }
+            };
+            $('.str').val(cuss.join(' '));
+        });
+    })
+    .catch(err => console.log(err));

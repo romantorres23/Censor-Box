@@ -6,5 +6,6 @@
     "cunt":"vajay",
     "ass":"booty",
     "horseshit":"cow-pie",
-    "twat":"noob"
+    "twat":"noob",
+    "mexican":"the working class"
 }
