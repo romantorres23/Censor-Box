@@ -52,21 +52,23 @@
 //     $('.str').val(str);
 // });
 
-/**************Will replace cuss words wiith a noun using objects*******************/
-const cusswords = {
-            'shit' : 'doodoo',
-            'fuck' : 'darn',
-            'bitch' : 'good doggy',    
-};
+/**************Will replace cuss words with a noun using objects*******************/
+// const cusswords = {
+//             'shit' : 'doodoo',
+//             'fuck' : 'darn',
+//             'bitch' : 'good doggy',    
+// };
 
-$(".go").on("click", function () {
-    let cuss = $('.str').val().split(' ');
-    //console.log(cuss);
+// $(".go").on("click", function () {
+//     let cuss = $('.str').val().split(' ');
+//     //console.log(cuss);
 
-    for (let i = 0; i < cuss.length; i = i + 1) {
-        if (typeof cusswords[cuss[i]] !== "undefined") {
-            cuss[i] = cusswords[cuss[i]];
-        }
-    };
-    $('.str').val(cuss.join(' '));
-});
+//     for (let i = 0; i < cuss.length; i = i + 1) {
+//         if (typeof cusswords[cuss[i]] !== "undefined") {
+//             cuss[i] = cusswords[cuss[i]];
+//         }
+//     };
+//     $('.str').val(cuss.join(' '));
+// });
+
+/**************Will replace cuss words with a noun using objects using JSON*******************/
